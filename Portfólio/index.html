@@ -2,64 +2,134 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diego Azevedo | Portfólio</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Portfólio de Diego de Azevedo, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em formação."
+    >
+
+    <title>
+        Diego de Azevedo | Desenvolvedor em Formação
+    </title>
+
+    <link rel="stylesheet" href="estilo.css">
+
 </head>
+
 
 <body>
 
+
+    <!-- CABEÇALHO -->
+
     <header>
-        <div class="logo">
+
+        <a href="#inicio" class="logo">
             &lt; Diego /&gt;
-        </div>
+        </a>
+
+
+        <button
+            class="menu-mobile"
+            aria-label="Abrir menu"
+        >
+            ☰
+        </button>
+
 
         <nav>
+
             <a href="#inicio">Início</a>
+
             <a href="#sobre">Sobre</a>
+
+            <a href="#habilidades">Habilidades</a>
+
+            <a href="#experiencia">Experiência</a>
+
+            <a href="#cursos">Cursos</a>
+
             <a href="#projetos">Projetos</a>
+
+            <a href="#formacao">Formação</a>
+
             <a href="#contato">Contato</a>
+
         </nav>
+
     </header>
+
 
 
     <main>
 
+
+        <!-- INÍCIO -->
+
         <section id="inicio" class="inicio">
 
-            <div class="apresentacao">
 
-                <p class="pequeno-titulo">
-                    OLÁ, EU SOU
-                </p>
+            <div class="inicio-texto">
+
+                <span class="inicio-tag">
+                    ESTUDANTE DE ADS | DESENVOLVEDOR EM FORMAÇÃO
+                </span>
+
 
                 <h1>
-                    Diego<br>
-                    de Azevedo
+                    Diego de Azevedo
                 </h1>
 
-                <h2>
-                    Desenvolvedor em formação
-                </h2>
 
-                <p class="descricao">
-                    Sou estudante de Análise e Desenvolvimento de Sistemas
-                    e estou construindo minha carreira na área de tecnologia.
-                    Gosto de aprender, criar projetos e resolver problemas
-                    através da programação.
+                <p>
+
+                    Estudante de Análise e Desenvolvimento de Sistemas,
+                    com interesse em desenvolvimento de software,
+                    banco de dados e tecnologia.
+
                 </p>
 
-                <div class="botoes">
 
-                    <a href="#projetos" class="botao-principal">
+                <p class="inicio-destaque">
+
+                    Busco uma oportunidade de estágio ou posição inicial
+                    em Tecnologia da Informação.
+
+                </p>
+
+
+                <div class="inicio-botoes">
+
+                    <a
+                        href="#projetos"
+                        class="botao principal"
+                    >
                         Ver projetos
                     </a>
 
-                    <a href="#sobre" class="botao-secundario">
-                        Sobre mim
+
+                    <a
+                        href="curriculo/curriculo-diego-azevedo.pdf"
+                        target="_blank"
+                        class="botao secundario"
+                    >
+                        Ver currículo
+                    </a>
+
+
+                    <a
+                        href="curriculo/curriculo-diego-azevedo.pdf"
+                        download
+                        class="botao secundario"
+                    >
+                        Baixar currículo
                     </a>
 
                 </div>
@@ -67,129 +137,1170 @@
             </div>
 
 
-            <div class="codigo">
 
-                <div class="topo-codigo">
+            <!-- FOTO -->
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="foto-container">
 
-                    <p>diego.js</p>
+                <div class="foto-card">
 
-                </div>
+                    <div class="foto-brilho"></div>
 
-                <div class="conteudo-codigo">
 
-                    <p>
-                        <span class="roxo">const</span>
-                        desenvolvedor =
-                    </p>
+                    <img
+                        src="imagens/diego.jpg"
+                        alt="Foto de Diego de Azevedo"
+                    >
 
-                    <p class="espaco">
-                        {
-                    </p>
 
-                    <p class="espaco-2">
-                        nome:
-                        <span class="verde">
-                            "Diego Azevedo"
+                    <div class="foto-info">
+
+                        <strong>
+                            Diego de Azevedo
+                        </strong>
+
+                        <span>
+                            Desenvolvedor em formação
                         </span>
-                    </p>
 
-                    <p class="espaco-2">
-                        curso:
-                        <span class="verde">
-                            "ADS"
-                        </span>
-                    </p>
-
-                    <p class="espaco-2">
-                        semestre:
-                        <span class="verde">
-                            "1º"
-                        </span>
-                    </p>
-
-                    <p class="espaco-2">
-                        aprendendo:
-                        <span class="verde">
-                            true
-                        </span>
-                    </p>
-
-                    <p class="espaco">
-                        };
-                    </p>
+                    </div>
 
                 </div>
 
             </div>
 
+
         </section>
 
+
+
+        <!-- SOBRE -->
 
         <section id="sobre" class="secao">
 
-            <h2>Sobre mim</h2>
 
-            <p>
-                Atualmente curso Análise e Desenvolvimento de Sistemas.
-                Estou desenvolvendo meus conhecimentos em programação,
-                desenvolvimento web e tecnologia.
-            </p>
+            <div class="titulo-secao">
 
-        </section>
+                <span>
+                    01
+                </span>
+
+                <h2>
+                    Sobre mim
+                </h2>
+
+            </div>
 
 
-        <section id="projetos" class="secao">
 
-            <h2>Projetos</h2>
+            <div class="sobre-container">
 
-            <div class="projetos">
 
-                <div class="projeto">
-                    <h3>Projeto 01</h3>
+                <div class="sobre-texto">
+
 
                     <p>
-                        Meu primeiro projeto será apresentado aqui.
+
+                        Sou estudante de
+                        <strong>
+                            Análise e Desenvolvimento de Sistemas
+                        </strong>,
+                        atualmente no 1º semestre.
+
                     </p>
+
+
+                    <p>
+
+                        Tenho interesse em desenvolvimento de software,
+                        banco de dados e tecnologia, buscando aplicar
+                        meus conhecimentos acadêmicos em situações práticas.
+
+                    </p>
+
+
+                    <p>
+
+                        Possuo experiência profissional em rotinas
+                        administrativas, atendimento, organização de
+                        documentos e informações.
+
+                    </p>
+
+
+                    <p>
+
+                        Minha experiência profissional também contribuiu
+                        para desenvolver organização, comunicação,
+                        responsabilidade e capacidade de resolução de problemas.
+
+                    </p>
+
+
                 </div>
 
-                <div class="projeto">
-                    <h3>Projeto 02</h3>
 
-                    <p>
-                        Em breve adicionarei outro projeto.
-                    </p>
+
+                <div class="sobre-destaque">
+
+
+                    <div class="destaque-item">
+
+                        <strong>
+                            ADS
+                        </strong>
+
+                        <span>
+                            1º semestre
+                        </span>
+
+                    </div>
+
+
+                    <div class="destaque-item">
+
+                        <strong>
+                            TI
+                        </strong>
+
+                        <span>
+                            Área de interesse
+                        </span>
+
+                    </div>
+
+
+                    <div class="destaque-item">
+
+                        <strong>
+                            SQL
+                        </strong>
+
+                        <span>
+                            Banco de dados
+                        </span>
+
+                    </div>
+
+
+                    <div class="destaque-item">
+
+                        <strong>
+                            Python
+                        </strong>
+
+                        <span>
+                            Programação
+                        </span>
+
+                    </div>
+
+
                 </div>
 
             </div>
 
+
         </section>
 
+
+
+        <!-- HABILIDADES -->
+
+        <section id="habilidades" class="secao">
+
+
+            <div class="titulo-secao">
+
+                <span>
+                    02
+                </span>
+
+                <h2>
+                    Habilidades
+                </h2>
+
+            </div>
+
+
+
+            <div class="habilidades-container">
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        PY
+                    </div>
+
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Fundamentos de programação e lógica utilizando Python.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        JS
+                    </div>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Desenvolvimento de funcionalidades e interações para páginas web.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        HTML
+                    </div>
+
+                    <h3>
+                        HTML5
+                    </h3>
+
+                    <p>
+                        Estruturação e organização de páginas web.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        CSS
+                    </div>
+
+                    <h3>
+                        CSS3
+                    </h3>
+
+                    <p>
+                        Estilização, layouts e desenvolvimento de interfaces responsivas.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        SQL
+                    </div>
+
+                    <h3>
+                        SQL
+                    </h3>
+
+                    <p>
+                        Consultas e fundamentos de banco de dados.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        PG
+                    </div>
+
+                    <h3>
+                        PostgreSQL
+                    </h3>
+
+                    <p>
+                        Estudos de banco de dados e análise de dados.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        FS
+                    </div>
+
+                    <h3>
+                        Full Stack
+                    </h3>
+
+                    <p>
+                        Conhecimentos e conceitos relacionados ao desenvolvimento Full Stack.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        SEC
+                    </div>
+
+                    <h3>
+                        Segurança da Informação
+                    </h3>
+
+                    <p>
+                        Fundamentos de segurança da informação.
+                    </p>
+
+                </div>
+
+
+
+                <div class="habilidade">
+
+                    <div class="icone">
+                        Git
+                    </div>
+
+                    <h3>
+                        GitHub
+                    </h3>
+
+                    <p>
+                        Organização e publicação de projetos e códigos.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- EXPERIÊNCIA -->
+
+        <section id="experiencia" class="secao">
+
+
+            <div class="titulo-secao">
+
+                <span>
+                    03
+                </span>
+
+                <h2>
+                    Experiência profissional
+                </h2>
+
+            </div>
+
+
+
+            <div class="experiencia-card">
+
+
+                <div class="experiencia-data">
+
+                    <span>
+                        08/2023
+                    </span>
+
+                    <span>
+                        08/2024
+                    </span>
+
+                </div>
+
+
+
+                <div class="experiencia-conteudo">
+
+                    <span class="experiencia-tipo">
+                        EXPERIÊNCIA PROFISSIONAL
+                    </span>
+
+
+                    <h3>
+                        Escrevente
+                    </h3>
+
+
+                    <h4>
+                        Cartório de Registro Civil das Pessoas Naturais
+                    </h4>
+
+
+                    <p class="experiencia-local">
+                        Santo Estêvão - BA
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Organização e conferência de documentos e informações.
+                        </li>
+
+                        <li>
+                            Atendimento ao público e apoio às rotinas administrativas.
+                        </li>
+
+                        <li>
+                            Registro, atualização e consulta de informações em processos internos.
+                        </li>
+
+                        <li>
+                            Cumprimento de procedimentos, prazos e controle de atividades.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- CURSOS -->
+
+        <section id="cursos" class="secao">
+
+
+            <div class="titulo-secao">
+
+                <span>
+                    04
+                </span>
+
+                <h2>
+                    Cursos e certificações
+                </h2>
+
+            </div>
+
+
+
+            <div class="cursos-container">
+
+
+                <div class="curso-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Python Essentials 1
+                    </h3>
+
+                    <p>
+                        Cisco Networking Academy / Python Institute
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Data Literacy
+                    </h3>
+
+                    <p>
+                        IBM SkillsBuild
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        SQL para Análise de Dados com PostgreSQL
+                    </h3>
+
+                    <p>
+                        Cursa
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        Lógica de Programação com Python
+                    </h3>
+
+                    <p>
+                        Cursa
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>05</span>
+
+                    <h3>
+                        Site Simples com HTML, CSS e JS
+                    </h3>
+
+                    <p>
+                        Fundação Bradesco - Escola Virtual
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>06</span>
+
+                    <h3>
+                        Segurança da Informação Básico
+                    </h3>
+
+                    <p>
+                        Cursa
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>07</span>
+
+                    <h3>
+                        Desenvolvimento Full Stack
+                    </h3>
+
+                    <p>
+                        XP Inc.
+                    </p>
+
+                    <small>
+                        Curso
+                    </small>
+
+                </div>
+
+
+
+                <div class="curso-card">
+
+                    <span>08</span>
+
+                    <h3>
+                        IA Aplicada a Negócios
+                    </h3>
+
+                    <p>
+                        PM3
+                    </p>
+
+                    <small>
+                        Curso
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- PROJETOS -->
+
+        <section id="projetos" class="secao">
+
+
+            <div class="titulo-secao">
+
+                <span>
+                    05
+                </span>
+
+                <h2>
+                    Projetos
+                </h2>
+
+            </div>
+
+
+
+            <div class="projetos-container">
+
+
+                <!-- PETLIFE -->
+
+                <article class="projeto-card">
+
+
+                    <div class="projeto-imagem">
+
+                        <img
+                            src="imagens/petlife.png"
+                            alt="Imagem do projeto PetLife"
+                        >
+
+                    </div>
+
+
+
+                    <div class="projeto-conteudo">
+
+
+                        <span class="projeto-tag">
+                            PROJETO WEB
+                        </span>
+
+
+                        <h3>
+                            PetLife
+                        </h3>
+
+
+                        <p>
+
+                            Projeto de site desenvolvido durante meus estudos
+                            de desenvolvimento web, utilizando HTML, CSS e JavaScript.
+
+                        </p>
+
+
+                        <div class="tecnologias">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="https://github.com/iwnldev/PetLife"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="projeto-link"
+                        >
+                            Ver no GitHub →
+                        </a>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- PORTFÓLIO -->
+
+                <article class="projeto-card">
+
+
+                    <div class="projeto-imagem">
+
+                        <img
+                            src="imagens/portfolio.png"
+                            alt="Imagem do meu portfólio"
+                        >
+
+                    </div>
+
+
+
+                    <div class="projeto-conteudo">
+
+
+                        <span class="projeto-tag">
+                            PROJETO PESSOAL
+                        </span>
+
+
+                        <h3>
+                            Meu Portfólio
+                        </h3>
+
+
+                        <p>
+
+                            Portfólio pessoal desenvolvido para apresentar
+                            minha trajetória, conhecimentos, projetos e
+                            experiências na área de tecnologia.
+
+                        </p>
+
+
+                        <div class="tecnologias">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="https://github.com/iwnldev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="projeto-link"
+                        >
+                            Ver no GitHub →
+                        </a>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- FORMAÇÃO -->
+
+        <section id="formacao" class="secao">
+
+
+            <div class="titulo-secao">
+
+                <span>
+                    06
+                </span>
+
+                <h2>
+                    Formação
+                </h2>
+
+            </div>
+
+
+
+            <div class="formacao-container">
+
+
+                <div class="formacao-card">
+
+
+                    <div class="formacao-icone">
+                        ADS
+                    </div>
+
+
+                    <div class="formacao-info">
+
+                        <span>
+                            CURSO SUPERIOR DE TECNOLOGIA
+                        </span>
+
+                        <h3>
+                            Análise e Desenvolvimento de Sistemas
+                        </h3>
+
+                        <p>
+                            1º semestre • Em andamento
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="formacao-card">
+
+
+                    <div class="formacao-icone">
+                        DIR
+                    </div>
+
+
+                    <div class="formacao-info">
+
+                        <span>
+                            FORMAÇÃO ANTERIOR
+                        </span>
+
+                        <h3>
+                            Bacharelado em Direito
+                        </h3>
+
+                        <p>
+                            UNEF – Unidade de Ensino Superior Feira de Santana
+                        </p>
+
+                        <p>
+                            Cursado até o 5º semestre
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- COMPETÊNCIAS -->
+
+        <section id="competencias" class="secao">
+
+
+            <div class="titulo-secao">
+
+                <span>
+                    07
+                </span>
+
+                <h2>
+                    Competências
+                </h2>
+
+            </div>
+
+
+
+            <div class="competencias-container">
+
+
+                <div class="competencia">
+                    Análise e resolução de problemas
+                </div>
+
+                <div class="competencia">
+                    Organização e atenção aos detalhes
+                </div>
+
+                <div class="competencia">
+                    Comunicação e trabalho em equipe
+                </div>
+
+                <div class="competencia">
+                    Pacote Office
+                </div>
+
+                <div class="competencia">
+                    Alfabetização de Dados
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- CONTATO -->
 
         <section id="contato" class="secao">
 
-            <h2>Entre em contato</h2>
 
-            <p>
-                Você pode entrar em contato comigo através das minhas
-                redes profissionais.
-            </p>
+            <div class="titulo-secao">
+
+                <span>
+                    08
+                </span>
+
+                <h2>
+                    Contato
+                </h2>
+
+            </div>
+
+
+
+            <div class="contato-introducao">
+
+                <p>
+                    Estou aberto a oportunidades de estágio e posições
+                    iniciais na área de Tecnologia da Informação.
+                </p>
+
+            </div>
+
+
+
+            <div class="contato-container">
+
+
+                <a
+                    href="mailto:diegocerqueira19@outlook.com"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        @
+                    </div>
+
+                    <div>
+
+                        <span>
+                            E-mail
+                        </span>
+
+                        <strong>
+                            diegocerqueira19@outlook.com
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <a
+                    href="tel:+5575983555557"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Telefone
+                        </span>
+
+                        <strong>
+                            (75) 98355-5557
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <div class="contato-card">
+
+                    <div class="contato-icone">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Localização
+                        </span>
+
+                        <strong>
+                            Santo Estêvão - BA
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <a
+                    href="https://github.com/iwnldev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        GH
+                    </div>
+
+                    <div>
+
+                        <span>
+                            GitHub
+                        </span>
+
+                        <strong>
+                            github.com/iwnldev
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <a
+                    href="https://www.linkedin.com/in/diegoazevedoo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        in
+                    </div>
+
+                    <div>
+
+                        <span>
+                            LinkedIn
+                        </span>
+
+                        <strong>
+                            linkedin.com/in/diegoazevedoo
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <a
+                    href="curriculo/curriculo-diego-azevedo.pdf"
+                    target="_blank"
+                    class="contato-card"
+                >
+
+                    <div class="contato-icone">
+                        CV
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Currículo
+                        </span>
+
+                        <strong>
+                            Visualizar currículo em PDF
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
 
         </section>
+
 
     </main>
 
 
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+
+    <button
+        id="voltarTopo"
+        aria-label="Voltar ao topo"
+    >
+        ↑
+    </button>
+
+
+
+    <!-- RODAPÉ -->
+
     <footer>
 
         <p>
-            © 2026 Diego Azevedo
+            © 2026 Diego de Azevedo Cerqueira Moreira
+        </p>
+
+        <p>
+            Desenvolvedor em formação
         </p>
 
     </footer>
+
 
 
     <script src="script.js"></script>
