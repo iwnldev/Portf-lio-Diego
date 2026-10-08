@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -15,51 +14,44 @@
         content="Portfólio de Diego de Azevedo, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em formação."
     >
 
-    <title>
-        Diego de Azevedo | Desenvolvedor em Formação
-    </title>
+    <meta
+        name="author"
+        content="Diego de Azevedo"
+    >
+
+    <title>Diego de Azevedo | Desenvolvedor em Formação</title>
 
     <link rel="stylesheet" href="estilo.css">
-
 </head>
-
 
 <body>
 
-
     <!-- CABEÇALHO -->
-
     <header>
 
-        <a href="#inicio" class="logo">
+        <a href="#inicio" class="logo" aria-label="Ir para o início">
             &lt; Diego /&gt;
         </a>
-
 
         <button
             class="menu-mobile"
             aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-principal"
         >
             ☰
         </button>
 
-
-        <nav>
+        <nav id="menu-principal">
 
             <a href="#inicio">Início</a>
-
             <a href="#sobre">Sobre</a>
-
             <a href="#habilidades">Habilidades</a>
-
-            <a href="#experiencia">Experiência</a>
-
-            <a href="#cursos">Cursos</a>
-
             <a href="#projetos">Projetos</a>
-
+            <a href="#experiencia">Experiência</a>
             <a href="#formacao">Formação</a>
-
+            <a href="#cursos">Cursos</a>
+            <a href="#competencias">Competências</a>
             <a href="#contato">Contato</a>
 
         </nav>
@@ -67,14 +59,10 @@
     </header>
 
 
-
     <main>
 
-
         <!-- INÍCIO -->
-
         <section id="inicio" class="inicio">
-
 
             <div class="inicio-texto">
 
@@ -82,28 +70,21 @@
                     ESTUDANTE DE ADS | DESENVOLVEDOR EM FORMAÇÃO
                 </span>
 
-
                 <h1>
                     Diego de Azevedo
                 </h1>
 
-
                 <p>
-
                     Estudante de Análise e Desenvolvimento de Sistemas,
-                    com interesse em desenvolvimento de software,
-                    banco de dados e tecnologia.
-
+                    desenvolvendo conhecimentos em programação,
+                    desenvolvimento web, banco de dados e tecnologia.
                 </p>
-
 
                 <p class="inicio-destaque">
-
-                    Busco uma oportunidade de estágio ou posição inicial
-                    em Tecnologia da Informação.
-
+                    Busco minha primeira oportunidade na área de tecnologia,
+                    especialmente em estágio ou posição inicial, para
+                    continuar aprendendo e colocar meus conhecimentos em prática.
                 </p>
-
 
                 <div class="inicio-botoes">
 
@@ -114,15 +95,14 @@
                         Ver projetos
                     </a>
 
-
                     <a
                         href="curriculo/curriculo-diego-azevedo.pdf"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="botao secundario"
                     >
                         Ver currículo
                     </a>
-
 
                     <a
                         href="curriculo/curriculo-diego-azevedo.pdf"
@@ -137,21 +117,17 @@
             </div>
 
 
-
             <!-- FOTO -->
-
             <div class="foto-container">
 
                 <div class="foto-card">
 
                     <div class="foto-brilho"></div>
 
-
                     <img
                         src="imagens/diego.jpg"
                         alt="Foto de Diego de Azevedo"
                     >
-
 
                     <div class="foto-info">
 
@@ -169,21 +145,15 @@
 
             </div>
 
-
         </section>
 
 
-
         <!-- SOBRE -->
-
         <section id="sobre" class="secao">
-
 
             <div class="titulo-secao">
 
-                <span>
-                    01
-                </span>
+                <span>01</span>
 
                 <h2>
                     Sobre mim
@@ -192,57 +162,46 @@
             </div>
 
 
-
             <div class="sobre-container">
-
 
                 <div class="sobre-texto">
 
-
                     <p>
-
                         Sou estudante de
                         <strong>
                             Análise e Desenvolvimento de Sistemas
                         </strong>,
                         atualmente no 1º semestre.
-
                     </p>
-
 
                     <p>
-
-                        Tenho interesse em desenvolvimento de software,
-                        banco de dados e tecnologia, buscando aplicar
-                        meus conhecimentos acadêmicos em situações práticas.
-
+                        Estou desenvolvendo meus conhecimentos em
+                        programação, desenvolvimento web, banco de dados
+                        e ferramentas utilizadas no desenvolvimento de software.
                     </p>
-
 
                     <p>
-
-                        Possuo experiência profissional em rotinas
-                        administrativas, atendimento, organização de
-                        documentos e informações.
-
+                        Gosto de aprender colocando o conhecimento em prática,
+                        principalmente por meio de projetos e exercícios que
+                        me ajudam a entender melhor cada tecnologia.
                     </p>
-
 
                     <p>
-
-                        Minha experiência profissional também contribuiu
-                        para desenvolver organização, comunicação,
-                        responsabilidade e capacidade de resolução de problemas.
-
+                        Antes de iniciar minha trajetória na área de tecnologia,
+                        tive experiência profissional com atendimento ao público,
+                        organização de documentos, informações e rotinas administrativas.
                     </p>
 
+                    <p>
+                        Essa experiência contribuiu para desenvolver minha
+                        comunicação, organização, responsabilidade, atenção aos
+                        detalhes e capacidade de resolver problemas.
+                    </p>
 
                 </div>
 
 
-
                 <div class="sobre-destaque">
-
 
                     <div class="destaque-item">
 
@@ -260,11 +219,11 @@
                     <div class="destaque-item">
 
                         <strong>
-                            TI
+                            Web
                         </strong>
 
                         <span>
-                            Área de interesse
+                            HTML, CSS e JavaScript
                         </span>
 
                     </div>
@@ -290,31 +249,24 @@
                         </strong>
 
                         <span>
-                            Programação
+                            Programação e lógica
                         </span>
 
                     </div>
-
 
                 </div>
 
             </div>
 
-
         </section>
 
 
-
         <!-- HABILIDADES -->
-
         <section id="habilidades" class="secao">
-
 
             <div class="titulo-secao">
 
-                <span>
-                    02
-                </span>
+                <span>02</span>
 
                 <h2>
                     Habilidades
@@ -323,188 +275,525 @@
             </div>
 
 
+            <div class="habilidades-grupos">
 
-            <div class="habilidades-container">
+                <!-- DESENVOLVIMENTO WEB -->
+                <div class="habilidade-grupo">
 
+                    <div class="grupo-titulo">
 
-                <div class="habilidade">
+                        <span class="grupo-numero">
+                            01
+                        </span>
 
-                    <div class="icone">
-                        PY
+                        <div>
+                            <h3>
+                                Desenvolvimento Web
+                            </h3>
+
+                            <p>
+                                Tecnologias utilizadas nos meus projetos web.
+                            </p>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        Python
-                    </h3>
 
-                    <p>
-                        Fundamentos de programação e lógica utilizando Python.
-                    </p>
+                    <div class="habilidades-container">
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                HTML
+                            </div>
+
+                            <h3>
+                                HTML5
+                            </h3>
+
+                            <p>
+                                Estruturação e organização de páginas web.
+                            </p>
+
+                        </div>
+
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                CSS
+                            </div>
+
+                            <h3>
+                                CSS3
+                            </h3>
+
+                            <p>
+                                Estilização, layouts e interfaces responsivas.
+                            </p>
+
+                        </div>
+
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                JS
+                            </div>
+
+                            <h3>
+                                JavaScript
+                            </h3>
+
+                            <p>
+                                Funcionalidades e interações para páginas web.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
+                <!-- PROGRAMAÇÃO -->
+                <div class="habilidade-grupo">
 
-                <div class="habilidade">
+                    <div class="grupo-titulo">
 
-                    <div class="icone">
-                        JS
+                        <span class="grupo-numero">
+                            02
+                        </span>
+
+                        <div>
+                            <h3>
+                                Programação
+                            </h3>
+
+                            <p>
+                                Fundamentos de programação e lógica.
+                            </p>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        JavaScript
-                    </h3>
 
-                    <p>
-                        Desenvolvimento de funcionalidades e interações para páginas web.
-                    </p>
+                    <div class="habilidades-container">
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                PY
+                            </div>
+
+                            <h3>
+                                Python
+                            </h3>
+
+                            <p>
+                                Fundamentos de programação e lógica.
+                            </p>
+
+                        </div>
+
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                LOG
+                            </div>
+
+                            <h3>
+                                Lógica de Programação
+                            </h3>
+
+                            <p>
+                                Estruturas condicionais, repetição e resolução de problemas.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
+                <!-- BANCO DE DADOS -->
+                <div class="habilidade-grupo">
 
-                <div class="habilidade">
+                    <div class="grupo-titulo">
 
-                    <div class="icone">
-                        HTML
+                        <span class="grupo-numero">
+                            03
+                        </span>
+
+                        <div>
+                            <h3>
+                                Banco de Dados
+                            </h3>
+
+                            <p>
+                                Conhecimentos desenvolvidos durante os estudos.
+                            </p>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        HTML5
-                    </h3>
 
-                    <p>
-                        Estruturação e organização de páginas web.
-                    </p>
+                    <div class="habilidades-container">
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                SQL
+                            </div>
+
+                            <h3>
+                                SQL
+                            </h3>
+
+                            <p>
+                                Consultas e fundamentos de banco de dados.
+                            </p>
+
+                        </div>
+
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                PG
+                            </div>
+
+                            <h3>
+                                PostgreSQL
+                            </h3>
+
+                            <p>
+                                Estudos de banco de dados e consultas SQL.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
+                <!-- FERRAMENTAS -->
+                <div class="habilidade-grupo">
 
-                <div class="habilidade">
+                    <div class="grupo-titulo">
 
-                    <div class="icone">
-                        CSS
+                        <span class="grupo-numero">
+                            04
+                        </span>
+
+                        <div>
+                            <h3>
+                                Ferramentas
+                            </h3>
+
+                            <p>
+                                Ferramentas utilizadas para desenvolver e organizar projetos.
+                            </p>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        CSS3
-                    </h3>
 
-                    <p>
-                        Estilização, layouts e desenvolvimento de interfaces responsivas.
-                    </p>
+                    <div class="habilidades-container">
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                GIT
+                            </div>
+
+                            <h3>
+                                Git
+                            </h3>
+
+                            <p>
+                                Controle de versão e organização do desenvolvimento.
+                            </p>
+
+                        </div>
+
+
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                GH
+                            </div>
+
+                            <h3>
+                                GitHub
+                            </h3>
+
+                            <p>
+                                Hospedagem, organização e publicação de projetos.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
+                <!-- COMPLEMENTARES -->
+                <div class="habilidade-grupo">
 
-                <div class="habilidade">
+                    <div class="grupo-titulo">
 
-                    <div class="icone">
-                        SQL
+                        <span class="grupo-numero">
+                            05
+                        </span>
+
+                        <div>
+                            <h3>
+                                Conhecimentos complementares
+                            </h3>
+
+                            <p>
+                                Outros conhecimentos desenvolvidos durante meus estudos.
+                            </p>
+                        </div>
+
                     </div>
 
-                    <h3>
-                        SQL
-                    </h3>
 
-                    <p>
-                        Consultas e fundamentos de banco de dados.
-                    </p>
+                    <div class="habilidades-container">
 
-                </div>
+                        <div class="habilidade">
+
+                            <div class="icone">
+                                SEC
+                            </div>
+
+                            <h3>
+                                Segurança da Informação
+                            </h3>
+
+                            <p>
+                                Fundamentos de segurança da informação.
+                            </p>
+
+                        </div>
 
 
+                        <div class="habilidade">
 
-                <div class="habilidade">
+                            <div class="icone">
+                                DL
+                            </div>
 
-                    <div class="icone">
-                        PG
+                            <h3>
+                                Alfabetização de Dados
+                            </h3>
+
+                            <p>
+                                Conceitos básicos de dados e análise.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <h3>
-                        PostgreSQL
-                    </h3>
-
-                    <p>
-                        Estudos de banco de dados e análise de dados.
-                    </p>
-
                 </div>
-
-
-
-                <div class="habilidade">
-
-                    <div class="icone">
-                        FS
-                    </div>
-
-                    <h3>
-                        Full Stack
-                    </h3>
-
-                    <p>
-                        Conhecimentos e conceitos relacionados ao desenvolvimento Full Stack.
-                    </p>
-
-                </div>
-
-
-
-                <div class="habilidade">
-
-                    <div class="icone">
-                        SEC
-                    </div>
-
-                    <h3>
-                        Segurança da Informação
-                    </h3>
-
-                    <p>
-                        Fundamentos de segurança da informação.
-                    </p>
-
-                </div>
-
-
-
-                <div class="habilidade">
-
-                    <div class="icone">
-                        Git
-                    </div>
-
-                    <h3>
-                        GitHub
-                    </h3>
-
-                    <p>
-                        Organização e publicação de projetos e códigos.
-                    </p>
-
-                </div>
-
 
             </div>
-
 
         </section>
 
 
-
-        <!-- EXPERIÊNCIA -->
-
-        <section id="experiencia" class="secao">
-
+        <!-- PROJETOS -->
+        <section id="projetos" class="secao">
 
             <div class="titulo-secao">
 
-                <span>
-                    03
-                </span>
+                <span>03</span>
+
+                <h2>
+                    Projetos
+                </h2>
+
+            </div>
+
+
+            <div class="projetos-introducao">
+
+                <p>
+                    Alguns projetos que desenvolvi durante meus estudos,
+                    utilizando na prática os conhecimentos que venho adquirindo.
+                </p>
+
+            </div>
+
+
+            <div class="projetos-container">
+
+                <!-- PETLIFE -->
+                <article class="projeto-card">
+
+                    <div class="projeto-imagem">
+
+                        <img
+                            src="imagens/petlife.png"
+                            alt="Imagem do projeto PetLife"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="projeto-conteudo">
+
+                        <span class="projeto-tag">
+                            PROJETO WEB
+                        </span>
+
+                        <h3>
+                            PetLife
+                        </h3>
+
+                        <p>
+                            Projeto desenvolvido durante meus estudos de
+                            desenvolvimento web, com foco na criação de uma
+                            página estruturada, estilizada e interativa.
+                        </p>
+
+                        <div class="projeto-aprendizado">
+
+                            <strong>
+                                O que pratiquei:
+                            </strong>
+
+                            <span>
+                                Estrutura HTML, estilização com CSS,
+                                responsividade e interações com JavaScript.
+                            </span>
+
+                        </div>
+
+
+                        <div class="tecnologias">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <a
+                            href="https://github.com/iwnldev/PetLife"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="projeto-link"
+                        >
+                            Ver código no GitHub →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PORTFÓLIO -->
+                <article class="projeto-card">
+
+                    <div class="projeto-imagem">
+
+                        <img
+                            src="imagens/portfolio.png"
+                            alt="Imagem do portfólio pessoal de Diego de Azevedo"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="projeto-conteudo">
+
+                        <span class="projeto-tag">
+                            PROJETO PESSOAL
+                        </span>
+
+                        <h3>
+                            Meu Portfólio
+                        </h3>
+
+                        <p>
+                            Portfólio pessoal desenvolvido para apresentar
+                            minha trajetória, conhecimentos, projetos,
+                            formação e evolução na área de tecnologia.
+                        </p>
+
+                        <div class="projeto-aprendizado">
+
+                            <strong>
+                                O que pratiquei:
+                            </strong>
+
+                            <span>
+                                Desenvolvimento web, responsividade,
+                                JavaScript, Git, GitHub e publicação com
+                                GitHub Pages.
+                            </span>
+
+                        </div>
+
+
+                        <div class="tecnologias">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+
+                        </div>
+
+
+                        <div class="projeto-links">
+
+                            <a
+                                href="https://iwnldev.github.io/Portf-lio-Diego/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="projeto-link"
+                            >
+                                Ver projeto →
+                            </a>
+
+                            <a
+                                href="https://github.com/iwnldev/Portf-lio-Diego"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="projeto-link"
+                            >
+                                Ver código →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIÊNCIA -->
+        <section id="experiencia" class="secao">
+
+            <div class="titulo-secao">
+
+                <span>04</span>
 
                 <h2>
                     Experiência profissional
@@ -513,9 +802,7 @@
             </div>
 
 
-
             <div class="experiencia-card">
-
 
                 <div class="experiencia-data">
 
@@ -530,28 +817,23 @@
                 </div>
 
 
-
                 <div class="experiencia-conteudo">
 
                     <span class="experiencia-tipo">
                         EXPERIÊNCIA PROFISSIONAL
                     </span>
 
-
                     <h3>
                         Escrevente
                     </h3>
-
 
                     <h4>
                         Cartório de Registro Civil das Pessoas Naturais
                     </h4>
 
-
                     <p class="experiencia-local">
                         Santo Estêvão - BA
                     </p>
-
 
                     <ul>
 
@@ -560,7 +842,7 @@
                         </li>
 
                         <li>
-                            Atendimento ao público e apoio às rotinas administrativas.
+                            Atendimento ao público e orientação sobre procedimentos.
                         </li>
 
                         <li>
@@ -571,387 +853,25 @@
                             Cumprimento de procedimentos, prazos e controle de atividades.
                         </li>
 
+                        <li>
+                            Desenvolvimento de organização, comunicação, atenção aos detalhes e responsabilidade.
+                        </li>
+
                     </ul>
 
                 </div>
 
-
             </div>
-
 
         </section>
-
-
-
-        <!-- CURSOS -->
-
-        <section id="cursos" class="secao">
-
-
-            <div class="titulo-secao">
-
-                <span>
-                    04
-                </span>
-
-                <h2>
-                    Cursos e certificações
-                </h2>
-
-            </div>
-
-
-
-            <div class="cursos-container">
-
-
-                <div class="curso-card">
-
-                    <span>01</span>
-
-                    <h3>
-                        Python Essentials 1
-                    </h3>
-
-                    <p>
-                        Cisco Networking Academy / Python Institute
-                    </p>
-
-                    <small>
-                        2026
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>02</span>
-
-                    <h3>
-                        Data Literacy
-                    </h3>
-
-                    <p>
-                        IBM SkillsBuild
-                    </p>
-
-                    <small>
-                        2026
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>03</span>
-
-                    <h3>
-                        SQL para Análise de Dados com PostgreSQL
-                    </h3>
-
-                    <p>
-                        Cursa
-                    </p>
-
-                    <small>
-                        2026
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>04</span>
-
-                    <h3>
-                        Lógica de Programação com Python
-                    </h3>
-
-                    <p>
-                        Cursa
-                    </p>
-
-                    <small>
-                        2026
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>05</span>
-
-                    <h3>
-                        Site Simples com HTML, CSS e JS
-                    </h3>
-
-                    <p>
-                        Fundação Bradesco - Escola Virtual
-                    </p>
-
-                    <small>
-                        2026
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>06</span>
-
-                    <h3>
-                        Segurança da Informação Básico
-                    </h3>
-
-                    <p>
-                        Cursa
-                    </p>
-
-                    <small>
-                        2026
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>07</span>
-
-                    <h3>
-                        Desenvolvimento Full Stack
-                    </h3>
-
-                    <p>
-                        XP Inc.
-                    </p>
-
-                    <small>
-                        Curso
-                    </small>
-
-                </div>
-
-
-
-                <div class="curso-card">
-
-                    <span>08</span>
-
-                    <h3>
-                        IA Aplicada a Negócios
-                    </h3>
-
-                    <p>
-                        PM3
-                    </p>
-
-                    <small>
-                        Curso
-                    </small>
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- PROJETOS -->
-
-        <section id="projetos" class="secao">
-
-
-            <div class="titulo-secao">
-
-                <span>
-                    05
-                </span>
-
-                <h2>
-                    Projetos
-                </h2>
-
-            </div>
-
-
-
-            <div class="projetos-container">
-
-
-                <!-- PETLIFE -->
-
-                <article class="projeto-card">
-
-
-                    <div class="projeto-imagem">
-
-                        <img
-                            src="imagens/petlife.png"
-                            alt="Imagem do projeto PetLife"
-                        >
-
-                    </div>
-
-
-
-                    <div class="projeto-conteudo">
-
-
-                        <span class="projeto-tag">
-                            PROJETO WEB
-                        </span>
-
-
-                        <h3>
-                            PetLife
-                        </h3>
-
-
-                        <p>
-
-                            Projeto de site desenvolvido durante meus estudos
-                            de desenvolvimento web, utilizando HTML, CSS e JavaScript.
-
-                        </p>
-
-
-                        <div class="tecnologias">
-
-                            <span>
-                                HTML
-                            </span>
-
-                            <span>
-                                CSS
-                            </span>
-
-                            <span>
-                                JavaScript
-                            </span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/iwnldev/PetLife"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="projeto-link"
-                        >
-                            Ver no GitHub →
-                        </a>
-
-
-                    </div>
-
-
-                </article>
-
-
-
-                <!-- PORTFÓLIO -->
-
-                <article class="projeto-card">
-
-
-                    <div class="projeto-imagem">
-
-                        <img
-                            src="imagens/portfolio.png"
-                            alt="Imagem do meu portfólio"
-                        >
-
-                    </div>
-
-
-
-                    <div class="projeto-conteudo">
-
-
-                        <span class="projeto-tag">
-                            PROJETO PESSOAL
-                        </span>
-
-
-                        <h3>
-                            Meu Portfólio
-                        </h3>
-
-
-                        <p>
-
-                            Portfólio pessoal desenvolvido para apresentar
-                            minha trajetória, conhecimentos, projetos e
-                            experiências na área de tecnologia.
-
-                        </p>
-
-
-                        <div class="tecnologias">
-
-                            <span>
-                                HTML
-                            </span>
-
-                            <span>
-                                CSS
-                            </span>
-
-                            <span>
-                                JavaScript
-                            </span>
-
-                        </div>
-
-
-                        <a
-                            href="https://github.com/iwnldev"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="projeto-link"
-                        >
-                            Ver no GitHub →
-                        </a>
-
-
-                    </div>
-
-
-                </article>
-
-
-            </div>
-
-
-        </section>
-
 
 
         <!-- FORMAÇÃO -->
-
         <section id="formacao" class="secao">
-
 
             <div class="titulo-secao">
 
-                <span>
-                    06
-                </span>
+                <span>05</span>
 
                 <h2>
                     Formação
@@ -960,17 +880,13 @@
             </div>
 
 
-
             <div class="formacao-container">
 
-
                 <div class="formacao-card">
-
 
                     <div class="formacao-icone">
                         ADS
                     </div>
-
 
                     <div class="formacao-info">
 
@@ -988,18 +904,14 @@
 
                     </div>
 
-
                 </div>
-
 
 
                 <div class="formacao-card">
 
-
                     <div class="formacao-icone">
                         DIR
                     </div>
-
 
                     <div class="formacao-info">
 
@@ -1021,27 +933,191 @@
 
                     </div>
 
-
                 </div>
 
-
             </div>
-
 
         </section>
 
 
-
-        <!-- COMPETÊNCIAS -->
-
-        <section id="competencias" class="secao">
-
+        <!-- CURSOS -->
+        <section id="cursos" class="secao">
 
             <div class="titulo-secao">
 
-                <span>
-                    07
-                </span>
+                <span>06</span>
+
+                <h2>
+                    Cursos
+                </h2>
+
+            </div>
+
+
+            <div class="cursos-container">
+
+                <div class="curso-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Python Essentials 1
+                    </h3>
+
+                    <p>
+                        Cisco Networking Academy / Python Institute
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Data Literacy
+                    </h3>
+
+                    <p>
+                        IBM SkillsBuild
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        SQL para Análise de Dados com PostgreSQL
+                    </h3>
+
+                    <p>
+                        Cursa
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        Lógica de Programação com Python
+                    </h3>
+
+                    <p>
+                        Cursa
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>05</span>
+
+                    <h3>
+                        Site Simples com HTML, CSS e JS
+                    </h3>
+
+                    <p>
+                        Fundação Bradesco - Escola Virtual
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>06</span>
+
+                    <h3>
+                        Segurança da Informação Básico
+                    </h3>
+
+                    <p>
+                        Cursa
+                    </p>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>07</span>
+
+                    <h3>
+                        Desenvolvimento Full Stack
+                    </h3>
+
+                    <p>
+                        XP Inc.
+                    </p>
+
+                    <small>
+                        Curso
+                    </small>
+
+                </div>
+
+
+                <div class="curso-card">
+
+                    <span>08</span>
+
+                    <h3>
+                        IA Aplicada a Negócios
+                    </h3>
+
+                    <p>
+                        PM3
+                    </p>
+
+                    <small>
+                        Curso
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPETÊNCIAS -->
+        <section id="competencias" class="secao">
+
+            <div class="titulo-secao">
+
+                <span>07</span>
 
                 <h2>
                     Competências
@@ -1050,9 +1126,17 @@
             </div>
 
 
+            <div class="competencias-introducao">
+
+                <p>
+                    Competências que venho desenvolvendo durante minha formação
+                    acadêmica e experiência profissional.
+                </p>
+
+            </div>
+
 
             <div class="competencias-container">
-
 
                 <div class="competencia">
                     Análise e resolução de problemas
@@ -1067,6 +1151,10 @@
                 </div>
 
                 <div class="competencia">
+                    Responsabilidade e organização
+                </div>
+
+                <div class="competencia">
                     Pacote Office
                 </div>
 
@@ -1074,31 +1162,23 @@
                     Alfabetização de Dados
                 </div>
 
-
             </div>
-
 
         </section>
 
 
-
         <!-- CONTATO -->
-
         <section id="contato" class="secao">
-
 
             <div class="titulo-secao">
 
-                <span>
-                    08
-                </span>
+                <span>08</span>
 
                 <h2>
                     Contato
                 </h2>
 
             </div>
-
 
 
             <div class="contato-introducao">
@@ -1111,9 +1191,7 @@
             </div>
 
 
-
             <div class="contato-container">
-
 
                 <a
                     href="mailto:diegocerqueira19@outlook.com"
@@ -1137,7 +1215,6 @@
                     </div>
 
                 </a>
-
 
 
                 <a
@@ -1164,7 +1241,6 @@
                 </a>
 
 
-
                 <div class="contato-card">
 
                     <div class="contato-icone">
@@ -1184,7 +1260,6 @@
                     </div>
 
                 </div>
-
 
 
                 <a
@@ -1213,7 +1288,6 @@
                 </a>
 
 
-
                 <a
                     href="https://www.linkedin.com/in/diegoazevedoo/"
                     target="_blank"
@@ -1240,10 +1314,10 @@
                 </a>
 
 
-
                 <a
                     href="curriculo/curriculo-diego-azevedo.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="contato-card"
                 >
 
@@ -1265,19 +1339,14 @@
 
                 </a>
 
-
             </div>
 
-
         </section>
-
 
     </main>
 
 
-
     <!-- BOTÃO VOLTAR AO TOPO -->
-
     <button
         id="voltarTopo"
         aria-label="Voltar ao topo"
@@ -1286,9 +1355,7 @@
     </button>
 
 
-
     <!-- RODAPÉ -->
-
     <footer>
 
         <p>
@@ -1300,7 +1367,6 @@
         </p>
 
     </footer>
-
 
 
     <script src="script.js"></script>
