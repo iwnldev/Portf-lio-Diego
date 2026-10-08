@@ -5,6 +5,7 @@ Olá! Eu sou **Diego de Azevedo**, estudante de **Análise e Desenvolvimento de 
 Este repositório contém meu portfólio pessoal, desenvolvido para apresentar um pouco da minha trajetória, conhecimentos, projetos e formação na área de tecnologia.
 
 ## 🌐 Portfólio
+<img width="1860" height="930" alt="portfolio" src="https://github.com/user-attachments/assets/7ce40c87-f698-4691-b90c-17f492b62e59" />
 
 Acesse meu portfólio online:
 
