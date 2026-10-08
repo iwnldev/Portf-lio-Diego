@@ -1,30 +1,57 @@
 console.log("Portfólio do Diego carregado!");
 
 
+// ========================================
 // MENU MOBILE
+// ========================================
 
 const menu = document.querySelector(".menu-mobile");
-
 const nav = document.querySelector("nav");
-
 
 if (menu && nav) {
 
     menu.addEventListener("click", function () {
 
-        nav.classList.toggle("ativo");
+        const menuAberto = nav.classList.toggle("ativo");
+
+        menu.setAttribute(
+            "aria-expanded",
+            menuAberto
+        );
+
+        menu.setAttribute(
+            "aria-label",
+            menuAberto
+                ? "Fechar menu"
+                : "Abrir menu"
+        );
+
+        menu.textContent = menuAberto
+            ? "×"
+            : "☰";
 
     });
 
 
     const linksMenu = nav.querySelectorAll("a");
 
-
     linksMenu.forEach(function (link) {
 
         link.addEventListener("click", function () {
 
             nav.classList.remove("ativo");
+
+            menu.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menu.setAttribute(
+                "aria-label",
+                "Abrir menu"
+            );
+
+            menu.textContent = "☰";
 
         });
 
@@ -33,11 +60,11 @@ if (menu && nav) {
 }
 
 
-
+// ========================================
 // BOTÃO VOLTAR AO TOPO
+// ========================================
 
 const voltarTopo = document.getElementById("voltarTopo");
-
 
 if (voltarTopo) {
 
@@ -71,11 +98,11 @@ if (voltarTopo) {
 }
 
 
-
-// ANIMAÇÕES
+// ========================================
+// ANIMAÇÕES AO ROLAR
+// ========================================
 
 const elementosAnimados = document.querySelectorAll(
-
     ".sobre-texto, " +
     ".sobre-destaque, " +
     ".habilidade, " +
@@ -86,21 +113,14 @@ const elementosAnimados = document.querySelectorAll(
     ".competencia, " +
     ".contato-card, " +
     ".foto-card"
-
 );
 
 
 elementosAnimados.forEach(function (elemento) {
 
-    elemento.style.opacity = "0";
-
-    elemento.style.transform = "translateY(25px)";
-
-    elemento.style.transition =
-        "opacity 0.6s ease, transform 0.6s ease";
+    elemento.classList.add("animar");
 
 });
-
 
 
 const observador = new IntersectionObserver(
@@ -111,12 +131,11 @@ const observador = new IntersectionObserver(
 
             if (elemento.isIntersecting) {
 
-                elemento.target.style.opacity = "1";
+                elemento.target.classList.add("visivel");
 
-                elemento.target.style.transform =
-                    "translateY(0)";
-
-                observador.unobserve(elemento.target);
+                observador.unobserve(
+                    elemento.target
+                );
 
             }
 
@@ -131,7 +150,6 @@ const observador = new IntersectionObserver(
 );
 
 
-
 elementosAnimados.forEach(function (elemento) {
 
     observador.observe(elemento);
@@ -139,19 +157,16 @@ elementosAnimados.forEach(function (elemento) {
 });
 
 
-
+// ========================================
 // ATRASO DAS ANIMAÇÕES
+// ========================================
 
 const grupos = [
 
     ".habilidade",
-
     ".curso-card",
-
     ".projeto-card",
-
     ".competencia",
-
     ".contato-card"
 
 ];
