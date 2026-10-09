@@ -461,6 +461,10 @@ nav a:focus {
     font-weight: bold;
 }
 
+.habilidade .icone i {
+    font-size: 28px;
+}
+
 .habilidade h3 {
     margin-bottom: 8px;
     font-size: 18px;
@@ -826,6 +830,21 @@ nav a:focus {
     font-size: 12px;
 }
 
+.curso-certificado {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 15px;
+    color: var(--roxo);
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.curso-certificado:hover {
+    color: var(--roxo-claro);
+    text-decoration: underline;
+}
+
 
 /* ========================================
    COMPETÊNCIAS
@@ -887,6 +906,60 @@ nav a:focus {
     color: var(--texto);
 
     max-width: 650px;
+}
+
+.contato-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.form-contato {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-grupo label {
+    font-size: 13px;
+    color: var(--texto-claro);
+    font-weight: bold;
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: #0b0b0d;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    border-color: var(--roxo);
+}
+
+.btn-enviar {
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
 }
 
 .contato-container {
@@ -1127,6 +1200,10 @@ footer p:first-child {
     }
 
     .formacao-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-wrapper {
         grid-template-columns: 1fr;
     }
 
