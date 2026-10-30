@@ -134,11 +134,21 @@ const observador = new IntersectionObserver(
 
             if (elemento.isIntersecting) {
 
-                elemento.target.classList.add("visivel");
+                const alvo = elemento.target;
 
-                observador.unobserve(
-                    elemento.target
-                );
+                alvo.classList.add("visivel");
+
+                observador.unobserve(alvo);
+
+                // Depois que o elemento termina de aparecer, tira o atraso
+                // para o efeito de hover responder na hora
+                const atraso = parseFloat(alvo.style.transitionDelay) || 0;
+
+                setTimeout(function () {
+
+                    alvo.style.transitionDelay = "";
+
+                }, (atraso + 0.8) * 1000);
 
             }
 
@@ -268,6 +278,119 @@ if (formulario && statusForm) {
             botao.textContent = "Enviar mensagem";
 
         }
+
+    });
+
+}
+
+
+// ========================================
+// FRASE DIGITADA NO TOPO
+// ========================================
+
+const cargoDigitado = document.getElementById("cargoDigitado");
+
+const preferePouco = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+).matches;
+
+// Quem prefere menos movimento (ou está sem JavaScript) vê a primeira frase parada
+if (cargoDigitado && !preferePouco) {
+
+    const frases = [
+        "desenvolvedor em formação",
+        "estudante de ADS",
+        "focado em desenvolvimento web",
+        "em busca do primeiro estágio"
+    ];
+
+    let indiceFrase = 0;
+    let quantidadeLetras = 0;
+    let apagando = false;
+
+    const digitar = function () {
+
+        const frase = frases[indiceFrase];
+
+        quantidadeLetras += apagando ? -1 : 1;
+
+        cargoDigitado.textContent = frase.slice(0, quantidadeLetras);
+
+        let espera = apagando ? 35 : 70;
+
+        if (!apagando && quantidadeLetras === frase.length) {
+
+            // Terminou de digitar: espera um pouco e começa a apagar
+            apagando = true;
+            espera = 1800;
+
+        } else if (apagando && quantidadeLetras === 0) {
+
+            // Terminou de apagar: passa para a próxima frase
+            apagando = false;
+            indiceFrase = (indiceFrase + 1) % frases.length;
+            espera = 400;
+
+        }
+
+        setTimeout(digitar, espera);
+
+    };
+
+    cargoDigitado.textContent = "";
+    setTimeout(digitar, 600);
+
+}
+
+
+// ========================================
+// DESTACAR NO MENU A SEÇÃO ATUAL
+// ========================================
+
+const secoesMenu = document.querySelectorAll("main section[id]");
+const linksNav = document.querySelectorAll("nav a[href^='#']");
+
+if (secoesMenu.length && linksNav.length) {
+
+    const observadorMenu = new IntersectionObserver(
+
+        function (secoes) {
+
+            secoes.forEach(function (secao) {
+
+                if (!secao.isIntersecting) {
+                    return;
+                }
+
+                linksNav.forEach(function (link) {
+
+                    const ehAtual =
+                        link.getAttribute("href") === "#" + secao.target.id;
+
+                    link.classList.toggle("link-ativo", ehAtual);
+
+                    if (ehAtual) {
+                        link.setAttribute("aria-current", "true");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+
+                });
+
+            });
+
+        },
+
+        // Considera "atual" a seção que cruza a faixa do meio da tela
+        {
+            rootMargin: "-45% 0px -50% 0px"
+        }
+
+    );
+
+    secoesMenu.forEach(function (secao) {
+
+        observadorMenu.observe(secao);
 
     });
 
