@@ -465,7 +465,12 @@ nav a:focus {
     font-size: 28px;
 }
 
-.habilidade h3 {
+.habilidade .icone svg {
+    width: 28px;
+    height: 28px;
+}
+
+.habilidade h4 {
     margin-bottom: 8px;
     font-size: 18px;
 }
@@ -960,6 +965,59 @@ nav a:focus {
     cursor: pointer;
     border: none;
     margin-top: 5px;
+}
+
+.btn-enviar:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Campo anti-spam: fica fora da tela, mas robôs ainda preenchem */
+.campo-oculto {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+/* Mensagem de retorno do formulário */
+.form-status {
+    display: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid var(--borda);
+}
+
+.form-status.visivel-status {
+    display: block;
+}
+
+.form-status.sucesso {
+    color: #7ee2a8;
+    border-color: rgba(126, 226, 168, 0.4);
+    background: rgba(126, 226, 168, 0.08);
+}
+
+.form-status.erro {
+    color: #ff9b9b;
+    border-color: rgba(255, 155, 155, 0.4);
+    background: rgba(255, 155, 155, 0.08);
+}
+
+.form-status a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--roxo-claro);
+    outline-offset: 3px;
 }
 
 .contato-container {
