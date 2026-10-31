@@ -394,4 +394,57 @@ if (secoesMenu.length && linksNav.length) {
 
     });
 
+    // ========================================
+// FUNDO ANIMADO DE CÓDIGOS (MAIS SUTIL)
+// ========================================
+
+const canvas = document.getElementById("fundoCodigo");
+
+if (canvas && !preferePouco) {
+    const ctx = canvas.getContext("2d");
+
+    let largura = canvas.width = window.innerWidth;
+    let altura = canvas.height = window.innerHeight;
+
+    window.addEventListener("resize", function() {
+        largura = canvas.width = window.innerWidth;
+        altura = canvas.height = window.innerHeight;
+    });
+
+    const letras = "01{}[]<>+-*/abcdef";
+    const alfabeto = letras.split("");
+
+    const tamanhoFonte = 14;
+    let colunas = Math.floor(largura / tamanhoFonte);
+    let quedas = [];
+
+    for (let i = 0; i < colunas; i++) {
+        quedas[i] = 1;
+    }
+
+    function desenharFundo() {
+        // Fundo escuro com rastro forte para apagar rápido e não embolar
+        ctx.fillStyle = "rgba(11, 11, 13, 0.25)";
+        ctx.fillRect(0, 0, largura, altura);
+
+        ctx.font = tamanhoFonte + "px monospace";
+
+        for (let i = 0; i < quedas.length; i++) {
+            const texto = alfabeto[Math.floor(Math.random() * alfabeto.length)];
+            
+            // Deixando a cor bem apagada e sutil (apenas um reflexo roxo escuro)
+            ctx.fillStyle = "rgba(184, 41, 255, 0.12)";
+            
+            ctx.fillText(texto, i * tamanhoFonte, quedas[i] * tamanhoFonte);
+
+            if (quedas[i] * tamanhoFonte > altura && Math.random() > 0.975) {
+                quedas[i] = 0;
+            }
+            quedas[i]++;
+        }
+    }
+
+    setInterval(desenharFundo, 70);
+}
+
 }
