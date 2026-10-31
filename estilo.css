@@ -654,6 +654,12 @@ nav a.link-ativo::after {
     transition: 0.5s;
 }
 
+.projeto-imagem img.capa-svg {
+    /* Capas desenhadas em SVG aparecem inteiras, sem cortar o título */
+    object-fit: contain;
+    background: #121216;
+}
+
 .projeto-card:hover .projeto-imagem img {
     transform: scale(1.04);
 }
