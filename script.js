@@ -448,3 +448,32 @@ if (canvas && !preferePouco) {
 }
 
 }
+
+
+// ========================================
+// IMAGEM ALTERNATIVA DOS PROJETOS
+// ========================================
+// Se o print de um projeto não carregar, mostra a capa ilustrada em SVG
+// (atributo data-alternativa) em vez de uma imagem quebrada.
+
+document.querySelectorAll("img[data-alternativa]").forEach(function (imagem) {
+
+    function usarAlternativa() {
+
+        imagem.onerror = null;
+        imagem.src = imagem.dataset.alternativa;
+        imagem.classList.remove("captura");
+        imagem.classList.add("capa-alternativa");
+
+    }
+
+    imagem.onerror = usarAlternativa;
+
+    // Caso o erro tenha acontecido antes deste código rodar
+    if (imagem.complete && imagem.naturalWidth === 0) {
+
+        usarAlternativa();
+
+    }
+
+});

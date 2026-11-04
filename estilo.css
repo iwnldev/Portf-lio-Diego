@@ -659,6 +659,12 @@ nav a.link-ativo::after {
     object-position: top center;
 }
 
+.projeto-imagem img.capa-alternativa {
+    /* Capa ilustrada em SVG (usada se o print não for encontrado): aparece inteira */
+    object-fit: contain;
+    background: #121216;
+}
+
 .projeto-card:hover .projeto-imagem img {
     transform: scale(1.04);
 }
